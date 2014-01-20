@@ -129,6 +129,9 @@ if __name__ == "__main__":
 	r = db.buscarPalabra (palabra, 0)
 	t1 = time.time()
 	total2 = t1 -t0
+	
+	#Sacamos el listado con los resultados:
+
 	print 'Encontrada la palabra %s %s. Tiempo NO usando tablas fts4: \t %s' % (palabra, r, total2 )
 
 	print 'tiemponormal / tiempofts4: %s' % (total2 / total1)
